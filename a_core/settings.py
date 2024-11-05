@@ -33,10 +33,10 @@ if ENVIRONMENT == 'development':
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = ["*"] 
+# ALLOWED_HOSTS = ["*"] 
 # ALLOWED_HOSTS = ['localhost', '127.0.0.1', env("RENDER_EXTERNAL_HOSTNAME")]   
-# ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-# CSRF_TRUSTED_ORIGINS =[ 'https://*.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ttugttag.up.railway.app']
+CSRF_TRUSTED_ORIGINS =[ 'https://ttugttag.up.railway.app' ]
 
 INTERNAL_IPS = (
     '127.0.0.1',
